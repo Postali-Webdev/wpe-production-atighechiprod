@@ -1,0 +1,217 @@
+/**
+ * Web Font Styles, H Styles, Body Text Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+/* Fonts */
+body, h1, h2, h3, h4, h5, h6, p, a, ul {
+} 
+
+p, a, ul, ol {
+
+}
+ul li, ol li {
+    margin: 0 0 0 20px;
+    font-size: 18px;
+}
+dl, blockquote, img {
+
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+    margin:0;
+}
+
+* {
+    font-family: $sans !important;
+}
+
+a {
+    text-decoration:none;
+    transition:$trans;
+    &:hover {
+        // color:$lt-red;
+        text-decoration:none;
+    }
+}
+
+.btn {
+    display:flex;
+    padding:10px 30px;
+    text-decoration:none;
+    transition:$trans;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+
+    &.gold {
+        background-color: $ltgold;
+        border: 2px solid $ltgold;
+        color:$white;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $white;
+            color: $ltgold;
+        }
+    }
+
+    &.blue {
+        background-color: $dkblue;
+        border: 2px solid $dkblue;
+        color:$white;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $dkgold;
+            border:2px solid $dkgold;
+            color: $white;
+        }
+    }
+}
+
+p {
+    font-size:16px;
+    line-height: 170%;
+    margin-bottom:30px;
+    margin-top: 0;
+    color:$dkblue;
+    font-weight: 300;
+
+    @include respond(phone) {
+        line-height: 160%;
+    }
+
+    a {
+        font-weight: inherit;
+    }
+
+    &.section {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 400 !important;
+    }
+
+    &.headline {
+        font-size: 60px;
+        line-height: 110%;
+        color: $ltgold;
+        letter-spacing: 1px;
+
+        @include respond(tab-port) {
+            font-size: 45px;
+        }
+
+        @include respond(phone) {
+            font-size: 34px;
+        }
+    }
+
+    &.sm-pd {
+        margin-bottom: 10px;
+    }
+
+    &.lg {
+        font-size: 25px;
+    }
+
+    &.xxl {
+        font-size: 55px;
+        line-height: 130%;
+
+        @include respond(phone) {
+            font-size: 45px;
+        }
+    }
+
+    &.spaced {
+        letter-spacing: 2px;
+    }
+
+    &#breadcrumbs {
+        padding: 0 0 30px;
+        font-weight: 300;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+
+        a {
+            color: $dkblue;
+            font-weight: 600;
+        }
+
+        span.icon-arrow-right {
+            font-size: 10px;
+            color: $dkgold;
+        }
+    }
+}
+
+h1 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 400 !important;
+    color:$dkblue;
+
+    @include respond(phone) {
+        font-size: 16px;
+    }
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 300 !important;
+    margin-bottom: 40px !important;
+    line-height: 110%;
+    color: $ltgold;
+    letter-spacing: 3px;
+
+    @include respond(desktop) {
+        font-size: 44px;
+    }
+
+    @include respond(phone) {
+        font-size: 34px;
+    }
+
+    &.lg {
+        font-size: 75px;
+        line-height: 125%;
+
+        @include respond(desktop) {
+            font-size: 55px;
+        }
+
+        @include respond(phone) {
+            font-size: 44px;
+        }
+    }
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400 !important;
+    margin-bottom: 30px !important;
+    color:$dkblue;
+
+    @include respond(phone) {
+        font-size: 26px;
+    }
+}
+
+h4 {
+    color: $dkblue;
+    font-weight: 400 !important;
+    font-size: 24px;
+    margin-bottom: 20px !important;
+    margin-top: 40px;
+}
