@@ -39,11 +39,15 @@ $phone = get_field('global_phone','options');
                     <div class="footer-menus">
                         <div class="menus">
                             <p><strong>PRACTICE AREAS</strong></p>
+                            <nav>
                             <?php wp_nav_menu( [ 'container' => false, 'theme_location' => 'footer-pa-nav' ] ); ?>
+                            </nav>
                         </div>
                         <div class="menus">
                             <p><strong>QUICK LINKS</strong></p>
+                            <nav>
                             <?php wp_nav_menu( [ 'container' => false, 'theme_location' => 'footer-ql-nav' ] ); ?>
+                            </nav>
                         </div>
                         <div class="social">
                             <ul class="social-links">
